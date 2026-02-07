@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Black Doge</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css?v=12" />
+    <link rel="icon" href="/asset/logo.jpg" />
+  </head>
+
+  <body style="background-color: #1a1a1a; overflow-x: hidden;" id="home">
+    <nav
+      id="menu"
+      class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button"
+    >
+      <div class="container-fluid w90">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/logo.png"
+            class="img-fluid position-absolute logo"
+            alt=""
+          /> </a
+        ><button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav mx-auto bgMenu">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tokenomics">tokenomics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how">How to buy</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#roadmap">Roadmap</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#memes">MEMES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#partnes">Partners</a>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav mx-4 mb-4"
+            style="flex-direction: row; padding: 30px 0 0"
+          >
+            <li class="nav-item2">
+              <a
+                class="nav-link2"
+                href="https://t.me/dogedark_eth"
+                target="_blank"
+                ><i class="lab la-telegram"></i
+              ></a>
+            </li>
+            <li class="nav-item2">
+              <a
+                class="nav-link2"
+                href="https://x.com/dogedark_eth"
+                target="_blank"
+                ><i class="lab la-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon" target="_blank">
+            <span class="navbar-text actions">
+              <button>BUY NOW</button>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="flutuante">
+      <div class="x">
+        <a href="https://x.com/dogedark_eth" target="_blank" style="color: #fff"
+          ><i class="lab la-twitter"></i
+        ></a>
+      </div>
+
+      <div class="telegram">
+        <a href="https://t.me/dogedark_eth" target="_blank" style="color: #fff"
+          ><i class="lab la-telegram"></i
+        ></a>
+      </div>
+    </div>
+    <section class="bgPrincipal">
+      <div class="container">
+        <div class="row">
+          <div class="circular">
+            <img src="assets/img/ciruculo.png" class="imgCircular" alt="" />
+          </div>
+          <div class="personagem">
+            <img
+              src="./assets/img/persogaem.png"
+              class="imgPersonagem"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <div id="tokenomics"></div>
+
+    <section>
+      <div class="container boxDegrade align-items-center">
+        <div class="row bgPadding p-5">
+          <div class="col-md-3 borderBoxToken">
+            <div class="title podkova">Contract</div>
+            <div class="number">0xcomingsoon</div>
+            <button onclick="copyToClipboard()">Copy</button>
+          </div>
+
+          <div class="col-md-3 text-md-center borderBoxToken">
+            <div class="title podkova">SUPPLY</div>
+            <div class="number">1000,000,000</div>
+          </div>
+
+          <div class="col-md-3 text-md-center borderBoxToken">
+            <div class="title podkova">TAX</div>
+            <div class="number">0% BUY -- 0% SELL</div>
+          </div>
+
+          <div class="col-md-3 text-md-center">
+            <div class="title podkova">CA Renounced</div>
+            <div class="number">LP Burned</div>
+          </div>
+
+          <div class="diviser"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        id="bgVideo"
+        style="width: 100%; height: 100%; object-fit: cover"
+      >
+        <source src="assets/img/hero.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div class="box">
+              Once upon a time, in the digital vastness of the crypto universe,
+              there was a coin that was born from a meme and took the world by
+              storm: Dogecoin. Created as a joke, it became a global phenomenon,
+              gathering a vibrant and passionate community. However, in the
+              midst of its rise, black forces began to awaken...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="position-relative margin-negativa">
+      <div class="nuvens">
+        <div id="how"></div>
+      </div>
+    </div>
+
+    <section class="margimHow">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./assets/img/hotbuy.png" class="img-fluid" alt="" />
+            <p class="text-light sora">
+              To ensure the stability and growth of the project, BLACK DOGE
+              implements a strategic and well-structured tokenomics:
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="maps">
+            <img
+              src="./assets/img/how.png"
+              class="img-fluid d-none d-md-block"
+              alt=""
+              srcset=""
+            />
+            <img
+              src="./assets/img/howNobile.png"
+              class="img-fluid d-block d-md-none"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div id="roadmap"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container margimMaps">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./assets/img/roadmap.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="boxRoad d-flex">
+              <div class="boxR1">
+                <img src="./assets/1.gif" class="img-fluid" alt="" srcset="" />
+              </div>
+              <div class="boxR2 pp">
+                <h2 class="text-light">Launch and Community Formation</h2>
+                <p class="text-light">
+                  Development of the smart contract on Ethereum. Initial marketing campaign with viral memes and
+                  influencers. Official launch and listing on decentralized
+                  exchanges (DEXs). Activation of the BLACK DOGE AI Assistant for
+                  market analysis and community interaction.
+                </p>
+              </div>
+            </div>
+
+            <div class="boxRoad d-flex">
+              <div class="boxR1">
+                <img src="./assets/2.gif" class="img-fluid" alt="" srcset="" />
+              </div>
+              <div class="boxR2 pp">
+                <h2 class="text-light">Expansion and Utility</h2>
+                <p class="text-light">
+                  Introducing DOGE FUN, the memecoin creation and launch
+                  platform. Implementing advanced AI functionality for automated
+                  interactions. Listing on centralized exchanges (CEXs) for
+                  increased adoption. First major token burn event based on
+                  transaction volume.
+                </p>
+              </div>
+            </div>
+
+            <div class="boxRoad d-flex">
+              <div class="boxR1">
+                <img src="./assets/3.gif" class="img-fluid" alt="" srcset="" />
+              </div>
+              <div class="boxR2 pp">
+                <h2 class="text-light">
+                  Consolidation and Strategic Partnerships
+                </h2>
+                <p class="text-light">
+                  Expanding the BLACK DOGE ecosystem with more AI tools.
+                  Partnering with blockchain and emerging technology projects.
+                  Global engagement events, including BLACK DOGE Fest and
+                  interactive AMAs. Growing the holder base with staking and
+                  rewards campaigns.
+                </p>
+              </div>
+            </div>
+
+            <div class="boxRoad d-flex">
+              <div class="boxR1">
+                <img
+                  src="./assets/4.gif"
+                  class="img-fluid"
+                  alt=""
+                  width="430"
+                  srcset=""
+                />
+              </div>
+              <div class="boxR2 pp">
+                <h2 class="text-light">ONE FUCKING DOLLAR</h2>
+                <p class="text-light">
+                  Reaching the $1 mark through mass adoption and planned
+                  scarcity. Becoming the most valuable and recognized memecoin
+                  on the market. Continuous expansion of the ecosystem with new
+                  tools and innovations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img
+              src="./assets/img/dogefun.png"
+              class="img-fluid"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-md-12 text-center">
+            <img
+              src="./assets/img/movk.png"
+              class="img-fluid"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <div id="memes"></div>
+    <section class="fundo2 padding310">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img
+              src="assets/img/memes.png"
+              class="img-fluid mb-5"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div id="memesC" class="owl-carousel owl-theme">
+          <div class="item"><img src="./assets/img/memes/1.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/memes/2.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/memes/3.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/memes/4.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/memes/5.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="container mt-5" style="height: 109vh" id="partnes">
+        <div class="row">
+          <div class="col-md-6 mt-5 mb-5">
+            <img
+              src="./assets/img/partners.png"
+              class="img-fluid"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img src="./assets/img/img/coin.png" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/coingecko-1.svg"
+              style="padding: 40px"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/ave.png"
+              class="img-fluid"
+              style="padding: 40px"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/okx-1.svg"
+              class="img-fluid"
+              style="filter: contrast(0.5); padding: 90px"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/Logo_Biget.svg.png"
+              class="img-fluid"
+              style="filter: grayscale(19); padding: 69px"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/Bybit-logo.png"
+              style="filter: brightness(31.5); padding: 70px"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/kraken.png"
+              class="img-fluid"
+              style="padding: 50px"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-3 border-solid-1px h-singular-25 d-flex align-items-center"
+          >
+            <img
+              src="./assets/img/img/binance.png"
+              class="img-fluid"
+              alt=""
+              style="padding: 40px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        id="bgVideo1"
+        style="width: 100%; height: 100%; object-fit: cover"
+      >
+        <source src="assets/img/hero2.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img src="./assets/img/logo.png" class="img-fluid" alt="" />
+            <p class="text-light">© 2026 BLACK DOGE $1. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/foo.js"></script>
+    <script>
+      function copyToClipboard() {
+        const text = "0xcomingsoon";
+        navigator.clipboard.writeText(text).then(() => {
+          alert("Copied to clipboard");
+        });
+      }
+    </script>
+    <script>
+      $("#memesC").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 5,
+            nav: false,
+            loop: true,
+          },
+        },
+      });
+
+      $("#videos").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: false,
+            loop: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
